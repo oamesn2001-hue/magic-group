@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ماجيك جروب | أدوات صحية</title>
+
+  <style>
+    /* ===== ألوان الموقع ===== */
+    :root{
+      --blue:#0b4da2;
+      --orange:#f28c28;
+      --white:#ffffff;
+      --gray:#f5f5f5;
+      --black:#070404;
+    }
+
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      background:var(--white);
+      color:#222;
+    }
+
+    /* ===== الهيدر ===== */
+    header{
+      background:#fff;
+      border-bottom:3px solid var(--blue);
+      padding:15px 40px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+    }
+
+    header img{
+      height:90px;
+    }
+
+    nav a{
+      margin:0 12px;
+      text-decoration:none;
+      color:var(--blue);
+      font-weight:bold;
+    }
+
+    nav a:hover{
+      color:var(--orange);
+    }
+
+    /* ===== سكشن الترحيب ===== */
+    .hero{
+      background:linear-gradient(135deg, var(--blue), #083b7a);
+      color:#fff;
+      padding:70px 20px;
+      text-align:center;
+    }
+
+    .hero h1{
+      font-size:40px;
+      margin-bottom:10px;
+    }
+
+    .hero p{
+      font-size:18px;
+    }
+
+    /* ===== الأقسام ===== */
+    .section{
+      padding:60px 20px;
+      max-width:1100px;
+      margin:auto;
+    }
+
+    .section h2{
+      color:var(--blue);
+      margin-bottom:25px;
+    }
+
+    /* ===== من نحن ===== */
+    .about p{
+      font-size:19px;
+      line-height:2.1;
+      margin-bottom:15px;
+    }
+
+    /* ===== المنتجات ===== */
+    .products{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+    }
+
+    .products a {
+      text-decoration: none; /* إزالة خط الرابط */
+      display: block;        /* يجعل الرابط يغطي كل الخانة */
+    }
+
+    .card{
+      border:1px solid #ddd;
+      padding:25px;
+      border-radius:12px;
+      text-align:center;
+      background:linear-gradient(135deg, var(--orange), #d69f05);
+      color:#fff;
+      transition:0.3s ease;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      box-shadow:0 15px 30px rgba(0,0,0,0.25);
+    }
+
+    .card h3{
+      color:var(--black);
+      margin-bottom:10px;
+    }
+
+    .card p{
+      color:#070404;
+    }
+
+    /* ===== الخريطة ===== */
+    .map{
+      margin-top:25px;
+      border-radius:10px;
+      overflow:hidden;
+    }
+
+    /* ===== الفوتر ===== */
+    footer{
+      background:var(--blue);
+      color:#fff;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+
+    footer span{color:var(--orange);}    
+  </style>
+</head>
+
+<body>
+
+<!-- ===== الهيدر ===== -->
+<header>
+  <img src="photo_5877337220870949037_y.jpg" alt="Magic Group Logo">
+  <nav>
+    <a href="#about">من نحن</a>
+    <a href="#products">منتجاتنا</a>
+    <a href="#contact">اتصل بنا</a>
+  </nav>
+</header>
+
+<!-- ===== ترحيب ===== -->
+<section class="hero">
+  <h1>ماجيك جروب – Magic Group</h1>
+  <p>متخصصون في تصنيع الأدوات الصحية ومستلزمات السباكة</p>
+</section>
+
+<!-- ===== من نحن ===== -->
+<section id="about" class="section about">
+  <h2>من نحن</h2>
+  <p>تأسست شركة ماجيك جروب عام 2020، امتدادًا لخبرة عملية تزيد عن 20 عامًا في مجال الصناعات الهندسية ومستلزمات السباكة.</p>
+  <p>نحن شركة متخصصة في صناعة الأفـيز، أطقم المسامير، وصلات المياه المرنة، والخلاطات، مع الالتزام بتقديم منتجات تجمع بين الجودة العالية، المتانة، والسعر التنافسي.</p>
+  <p>نعمل على تطوير منتجاتنا باستمرار لتلبية احتياجات السوق المصري، مع الالتزام بالمواصفات القياسية ومعايير الجودة.</p>
+</section>
+
+<!-- ===== المنتجات ===== -->
+<section id="products" class="section">
+  <h2>منتجاتنا</h2>
+  <div class="products">
+    <a href="afiz.html" target="_blank">
+      <div class="card"><h3>الأفيز</h3><p>قوة تثبيت عالية وجودة تصنيع.</p></div>
+    </a>
+    <a href="nails.html" target="_blank">
+      <div class="card"><h3>أطقم المسامير</h3><p>دقة ومتانة للاستخدام الصناعي.</p></div>
+    </a>
+    <a href="pipes.html" target="_blank">
+      <div class="card"><h3>وصلات المياه المرنة</h3><p>أمان وتحمل ضغط عالي.</p></div>
+    </a>
+    <a href="mixers.html" target="_blank">
+      <div class="card"><h3>الخلاطات</h3><p>تصميم عملي وعمر افتراضي طويل.</p></div>
+    </a>
+  </div>
+</section>
+
+<!-- ===== تواصل ===== -->
+<section id="contact" class="section">
+  <h2>اتصل بنا</h2>
+  <p>📞 هاتف: +20 1003516235</p>
+  <p>💬 واتساب: <a href="https://wa.me/201003516235" target="_blank">تواصل عبر واتساب</a></p>
+  <p>📍 العنوان: الغربية – مدينة ميت غمر</p>
+  <p>📘 فيسبوك: <a href="https://www.facebook.com/profile.php?id=100090784621098&locale=ar_AR" target="_blank">صفحتنا على فيسبوك</a></p>
+  <div class="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.518808847712!2d30.987471!3d30.802678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7c98e7b2d6e55:0x430ce90a92d8cb95!2sMagic%20Group!5e0!3m2!1sar!2seg!4v123456"
+      width="100%"
+      height="400"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+<!-- ===== الفوتر ===== -->
+<footer>
+  © 2025 <span>Magic Group</span> – جميع الحقوق محفوظة
+</footer>
+
+</body>
+</html>
